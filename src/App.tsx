@@ -5,6 +5,7 @@ import SobreNos from './components/SobreNos';
 import TelaPrincipal from './components/TelaPrincipal/TelaPrincipal'; // Importe o componente TelaPrincipal
 import Cadastro from './components/cadastro/cadastro';
 import Navbar from './components/navbar/Navbar';
+import ContaUsuario from './components/Home';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/cliente-porto" element={<JaSouClientePorto />} />
         <Route path="/" element={<TelaPrincipal />} /> {/* Adicione o componente TelaPrincipal na rota raiz */}
+        <Route path="/conta" element={<ContaUsuario />} />
       </Routes>
     </div>
   );
